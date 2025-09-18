@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://c660heuhtnq6b"]
+
+[ext_resource type="Script" uid="uid://db1odepcalhdh" path="res://chat_ui.gd" id="1_hixvo"]
+
+[node name="chat_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hixvo")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MessagesContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="MessagePanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.59375
+anchor_right = 12.26875
+anchor_bottom = 16.2
+offset_left = 660.25
+offset_right = 660.25
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="MessagePanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6680942
+anchor_top = 0.12962963
+anchor_right = 10.637325
+anchor_bottom = 0.7046294
+text = "Benim Anamı Siktiler"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="MessagePanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01927192
+anchor_top = 0.021604938
+anchor_right = 9.988502
+anchor_bottom = 0.596605
+text = "Benim Anamı Siktiler"
+metadata/_edit_use_anchors_ = true
