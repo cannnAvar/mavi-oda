@@ -13,9 +13,12 @@ var messages := [
 	{"who": "right", "text": "Haklısın, NİGGER NİGGER NİGGER"}
 ]
 
-func get_messages():
-	var message = FileAccess.open("res://dialog.txt", FileAccess.READ)
-	return message.get_as_text()
+func get_messages(file_path : String):
+	var message = FileAccess.open(file_path, FileAccess.READ)
+	if message == null:
+		printerr("Dosya açılamadı:" + file_path + " Eror code:" + str(FileAccess.get_open_error()))
+	elif messages != null:
+		return message.get_as_text()
 
 
 var current_index = 0
@@ -23,8 +26,7 @@ var current_index = 0
 func _ready():
 	# İlk mesajı göster
 	show_next_message()
-	print_debug(typeof(messages))
-	print(get_messages())
+	print(get_messages("res://dialog.txt"))
 
 
 func _input(event):
