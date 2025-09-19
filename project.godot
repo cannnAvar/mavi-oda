@@ -15,6 +15,11 @@ run/main_scene="res://control.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ChangeScene="*res://change_scene.tscn"
+ChoiceManager="*res://Choice_Manager.gd"
+
 [display]
 
 window/stretch/mode="viewport"
