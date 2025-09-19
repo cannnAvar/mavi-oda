@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Mavi Oda"
-run/main_scene="res://control.tscn"
+run/main_scene="uid://c4g6x0i3gd4rc"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ChangeScene="*res://change_scene.tscn"
 
 [display]
 
