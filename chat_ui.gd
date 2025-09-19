@@ -4,7 +4,7 @@ extends Control
 @onready var scroll_container = $ScrollContainer
 
 # Deneme mesajları
-var messages = [
+var messages := [
 	{"who": "left", "text": "Selam, nasılsın?"},
 	{"who": "right", "text": "İyiyim, sen nasılsın?"},
 	{"who": "left", "text": "Bugün hava çok güzel!"},
@@ -13,11 +13,19 @@ var messages = [
 	{"who": "right", "text": "Haklısın, NİGGER NİGGER NİGGER"}
 ]
 
+func get_messages():
+	var message = FileAccess.open("res://dialog.txt", FileAccess.READ)
+	return message.get_as_text()
+
+
 var current_index = 0
 
 func _ready():
 	# İlk mesajı göster
 	show_next_message()
+	print_debug(typeof(messages))
+	print(get_messages())
+
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
