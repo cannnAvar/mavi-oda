@@ -4,30 +4,32 @@ extends Control
 @onready var scroll_container = $ScrollContainer
 
 # Deneme mesajları
-var messages := [
-	{"who": "left", "text": "Selam, nasılsın?"},
-	{"who": "right", "text": "İyiyim, sen nasılsın?"},
-	{"who": "left", "text": "Bugün hava çok güzel!"},
-	{"who": "right", "text": "Evet, yürüyüşe çıkabilirim."},
-	{"who": "left", "text": "Bu uzun bir mesaj örneği. ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ ZENCİ"},
-	{"who": "right", "text": "Haklısın, NİGGER NİGGER NİGGER"}
-]
 
-func get_messages(file_path : String):
+func get_messages(file_path : String) -> Array:
 	var message = FileAccess.open(file_path, FileAccess.READ)
-	if message == null:
+	if message != null:
+		var json = JSON.new()
+		var error = json.parse(message.get_as_text()) 
+		if error == OK:
+			var data_received = json.data
+			if typeof(data_received) == TYPE_ARRAY:
+				return data_received
+			else:
+				print("Unexpected data")
+		else:
+			print("JSON Parse Error: ", json.get_error_message(), " in ", message, " at line ", json.get_error_line())
+		message.close()
+	elif message == null:
 		printerr("Dosya açılamadı:" + file_path + " Eror code:" + str(FileAccess.get_open_error()))
-	elif messages != null:
-		return message.get_as_text()
+	return []
 
-
+var messages := get_messages("res://dialog.json")
 var current_index = 0
 
 func _ready():
 	# İlk mesajı göster
 	show_next_message()
-	print(get_messages("res://dialog.txt"))
-
+	
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
