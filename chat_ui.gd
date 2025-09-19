@@ -23,7 +23,7 @@ func get_messages(file_path : String) -> Array:
 		printerr("Dosya açılamadı:" + file_path + " Eror code:" + str(FileAccess.get_open_error()))
 	return []
 
-var messages := get_messages("res://dialog.json")
+var messages := get_messages("res://dialoglar/dialog.json")
 var current_index = 0
 
 func _ready():
