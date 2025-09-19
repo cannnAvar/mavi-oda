@@ -1,8 +1,97 @@
 [
-	{"who": "left", "text": "Selam, nasılsın?"},
-	{"who": "right", "text": "İyiyim, sen nasılsın? Efendim adınızı Öğrenebilir miyim"},
-	{"who": "left", "text": "Adım şey emm Cemal Hocam"},
-	{"who": "right", "text": "Cemal bey bana ne için gelmiştiniz bahsedebilir misiniz."},
-	{"who": "left", "text": "Hocam… Ben delirdim mi? İşteyken sarhoş gibi oluyorum, ama içki içmedim. Evde de aynı… Su… suya bir şey mi katıyorlar, yoksa ben mi artık…?"},
 	
+	{"who": "left", "text": "Selam hocam… kusura bakmayın biraz telaşlı geldim."},
+	{"who": "right", "text": "Hoş geldiniz, rahat olun. Burası sizi dinlemek için var. Öncelikle, adınızı öğrenebilir miyim?"},
+	{"who": "left", "text": "Adım Cemal. Su hattında çalışıyorum, kasabanın suyunu ben taşırım."},
+	{"who": "right", "text": "Memnun oldum Cemal bey. Bana gelmenize sebep olan sıkıntılarınızı paylaşmak ister misiniz?"},
+	{"who": "left", "text": "Hocam… son zamanlarda çok tuhaf hissediyorum. İşteyken… sanki sarhoş gibi oluyorum. Ama vallahi içki içmedim."},
+	{"who": "right", "text": "Sarhoşluk hissi… Bunu tarif eder misiniz? Bedensel mi, yoksa zihinsel olarak mı yaşıyorsunuz?"},
+	{"who": "left", "text": "İkisi birden… Ayaklarım boşalıyor, kafam dönüyor. Sonra eve gidince… karım kavga çıkarıyor. Çocuğum gözümün içine bakmaya korkuyor."},
+	{"who": "right", "text": "Anladım. Bu durum ne zamandır devam ediyor?"},
+	{"who": "left", "text": "Yaklaşık iki aydır… Önce işin yorgunluğu sandım. Ama zamanla kötüleşti. O borulardan gelen kokuyu soluyorum ya… o an dünya kayıyor altımdan."},
+	{"who": "right", "text": "Borulardaki suyun kokusu diyorsunuz. Size göre bu sarhoşluk hissi onunla bağlantılı olabilir."},
+	{"who": "left", "text": "Evet! Ama kimse bana inanmıyor. 'Kafayı yedin Cemal' diyorlar. Bazen düşünüyorum… belki de gerçekten aklımı kaybediyorum."},
+	{"who": "right", "text": "Şunu bilmenizi isterim: Burada yaşadıklarınızın adı 'delilik' değil. Yaşadığınız şeyleri anlamamız gerekiyor. Belki de bedeniniz, size bir şey anlatmaya çalışıyor."},
+	{"who": "left", "text": "Ama hocam… bazen başka şeyler de görüyorum. İnsanların yüzleri bulanıklaşıyor. Sanki herkesin maskesi var. Çocuğum bile bana yabancı geliyor."},
+	{"who": "right", "text": "Bu görüntüler ve hisler sizi nasıl etkiliyor?"},
+	{"who": "left", "text": "Korkuyorum. Uykularım kaçıyor. Sanki içimde bir ses var. 'Devam et, bırakma işi. Herkes aynı suyu içiyor. Onlara da iyi geliyor.' diyor. Ama ya suya gerçekten bir şey katılıyorsa?"},	
+	{"who": "right", "text": "İçinizdeki sesin size söylediği şeyler, sizin düşüncelerinizden ayrışmış olabilir. Sizi yönlendiriyor gibi mi hissediyorsunuz?"},
+	{"who": "left", "text": "Evet… Sanki ben değilim. Sanki biri, kafamın içinde bana emir veriyor. 'İç, çalış, devam et'… Çocukken de böyle hissetmiştim. Babam zorla içirirdi bazen… Dayanmak için yutardım her şeyi. Belki şimdi de aynı şeyi yapıyorum."},
+	{"who": "right", "text": "Çok önemli bir şey paylaştınız Cemal bey. Geçmişteki acı deneyimler, bazen bugünkü yaşantılarımızı şekillendirebilir. Belki de suyla ilgili yaşadığınız şey, bu travmalarınızı tetikliyor."},
+	{"who": "left", "text": "Ama hocam… ben babam gibi olmak istemiyorum. Çocuğumun bana korkuyla bakmasına dayanamıyorum."},
+	{"who": "right", "text": "Bunu söylüyor olmanız çok kıymetli. Çünkü siz farkındasınız ve bu döngüyü kırmak istiyorsunuz. Peki, sizce bu durumla baş etmek için neye ihtiyacınız var?"},
+	{"who": "left", "text": "Bilmiyorum… Belki işten ayrılmam gerek. Belki de kendimi öldürmeliyim. Çünkü bu kasaba suyun esiri olmuş gibi. Ben de onların arasında kayboluyorum."},
+	{"who": "right", "text": "Cemal bey, sizin için hayat sona ermiş değil. Burada birlikte çözümler arıyoruz. Çocuğunuz için, eşiniz için, kendiniz için hâlâ umut var."}
+
+
+]
+]
+
+
+
+
+
+#childdı değiştircez
+[
+	# Giriş
+	{"who": "left", "text": "Hocam… Ben artık dayanamıyorum. Ali kendi kendine konuşuyor, garip şeyler yapıyor, gece korkusundan uyanıyor… Lütfen bize yardım edin!"},
+	{"who": "left", "text": "Ali, hadi oğlum söyle… ne oluyor sana?"},
+	{"who": "child", "text": "(sessizce annesinin arkasına saklanır, yere bakar)"},
+	{"who": "right", "text": "Hoş geldiniz. Öncelikle rahat olun, burası güvenli bir yer. Ali, sen benimle konuşmak ister misin?"},
+	{"who": "child", "text": "Ben… ben iyiyim hocam. Bir şeyim yok."},
+	{"who": "left", "text": "Hocam inanın bir şey var. Geceleri kendi kendine bağırıyor, uyanıyor, bazen birine bakıyormuş gibi konuşuyor."},
+	{"who": "right", "text": "Ali, sana bir şey sormak istiyorum. Bazen başkalarının göremediği şeyleri görüp duyuyor musun?"},
+	{"who": "child", "text": "(gözleri büyür) …Belki. Ama annem korkmasın diye söylemek istemiyorum."},
+	{"who": "left", "text": "Görüyor musun! Oğlum bunu bana niye saklıyorsun?"},
+	{"who": "right", "text": "Ali, burada seni yargılamıyoruz. Sadece anlamak istiyoruz. Ne gördüğünü, ne duyduğunu anlatabilir misin?"},
+	{"who": "child", "text": "Gece uyanınca odamda biri oluyor. Karanlıkta parlıyor. Bana ‘su iç, susama’ diyor. Bazen çok bağırıyor."},
+	{"who": "left", "text": "Hocam… böyle şeyler nasıl olur?!"},
+
+	# Duygular ve güven inşası
+	{"who": "right", "text": "Bu gördüğün şeyler seni korkutuyor, değil mi Ali?"},
+	{"who": "child", "text": "Evet… çok korkuyorum… Ama ne yapacağımı bilmiyorum."},
+	{"who": "left", "text": "Hocam… benim de yüreğim ağrıyor. Oğlumun korktuğunu görmek çok zor."},
+	{"who": "right", "text": "Selma hanım, sizin hissettikleriniz çok değerli. Birlikte bu durumu çözebiliriz. Ali, ben yanındayım."},
+	{"who": "child", "text": "Gerçekten yanımda mısınız? Hiç kimse yanımda olmadı."},
+	{"who": "right", "text": "Evet Ali, buradayım. Sana inanıyoruz. Bu sadece hayal gücün değil, önemli bir şey yaşıyorsun."},
+
+	# Hayali figür detaylandırması
+	{"who": "right", "text": "O parlayan figür sana ne söylüyor?"},
+	{"who": "child", "text": "‘Su iç, susama… Herkes içiyor, sen de iç’ diyor. Bazen başka şeyler de fısıldıyor… Ama ben anlamıyorum."},
+	{"who": "left", "text": "Hocam… su mu? Kasabadaki su mu oğlumu böyle yapıyor?"},
+	{"who": "right", "text": "Bu durumu araştırmamız lazım. Ama Ali’nin hislerini dinlemek çok önemli. Ne hissettiğini anlamadan çözüm bulamayız."},
+	{"who": "child", "text": "Bazen yalnız kalmak istiyorum… ama o figür gelince yapamıyorum."},
+	{"who": "left", "text": "Oğlum… sana yardım edeceğiz…"},
+	{"who": "right", "text": "Ali, birlikte yöntemler deneyebiliriz. Sen korktuğun şeyleri anlatınca, biz çözüm yolları bulabiliriz."},
+
+	{"who": "child", "text": "Tamam hocam… size anlatacağım. Ama lütfen annem korkmasın."},
+	{"who": "left", "text": "Söz veriyorum oğlum, birlikte halledeceğiz."},
+	{"who": "right", "text": "Harika! İlk adımı attın Ali. Şimdi birlikte bu durumu aşacağız."}
+]
+
+[
+    {"who": "left", "text": "Hocam… İnsanlar garipleşti. Sokakta yürürken tuhaf sesler duyuyorum, herkes birbirini yanlış anlıyor… Bazen kendi melodilerimi çalarken bile kontrolümü kaybediyorum. Bu normal mi?"},
+    {"who": "right", "text": "Hoş geldin Baran. Burası senin kendini ifade edebileceğin bir yer. Öncelikle, biraz rahatla. Melodilerinden ve hislerinden bahsetmek ister misin?"},
+    {"who": "left", "text": "Gitarımı hep yanımda taşıyorum. Çalarken… bazen kelimeler ve notalar birbiriyle çatışıyor gibi. İnsanlar bana garip bakıyor, sanki başka bir dünyanın içinde gibiyim."},
+    {"who": "right", "text": "Bu çatışmaları biraz açar mısın? Hislerini müzikle mi yoksa gözlemlediklerinle mi yaşıyorsun?"},
+    {"who": "left", "text": "İkisi birden… Müziğim ruhumu yansıtıyor ama sokakta gördüğüm insanlar… sanki hepsi başka bir karaktere bürünmüş. Cemal bile… normal değil gibi."},
+    {"who": "right", "text": "Cemal’i kast ediyorsun. Geçmişte onunla bir sürtüşmen oldu değil mi?"},
+    {"who": "left", "text": "Evet… ama bu sadece küçük bir tartışmaydı. Şimdi gördüklerim farklı, sanki kasaba değişti. İnsanlar… davranışları anlamsız, sanki bir oyun içindeymiş gibi."},
+    {"who": "right", "text": "Bu hisler seni korkutuyor mu?"},
+    {"who": "left", "text": "Korku ve öfke var içimde. Kimi zaman çalarken kontrolümü kaybediyorum, melodilerim sanki kendi başına hareket ediyor. İnsanlar da buna tepki veriyor, beni yanlış anlıyorlar."},
+    {"who": "right", "text": "Anladım… Bu oldukça karmaşık bir durum. Duygularını anlamak ve onları yönlendirmek önemli. Peki, bu karmaşık duygularla başa çıkmak için ne yapmayı düşünüyorsun?"},
+    {"who": "left", "text": "Bilmiyorum… Sanki her şey elimden kayıyor. Bazen gitarımı bırakıp kaçmak istiyorum. Ama sonra düşünürüm, bu benim dünyam. Müziğim olmasa daha da kaybolurum."},
+    {"who": "right", "text": "Müziğin senin için bir sığınak gibi. Peki, bu sığınağı kullanarak hislerini ifade etmeyi denedin mi? Ya da onları notalara dökmek rahatlatır mı?"},
+    {"who": "left", "text": "Denerim… ama bazen notalar da yetmiyor. İnsanlar anlamıyor, dinlemiyor. Sanki kasaba… kasaba da değişti. Herkes farklı bir maskeye bürünmüş."},
+    {"who": "right", "text": "Maskeler… Bu hisleri fark etmek önemli. Sen onları fark ediyorsun, bu seni diğerlerinden ayırıyor. Kendini yalnız hissetmek normal mi?"},
+    {"who": "left", "text": "Evet, çok yalnız hissediyorum. Kendi melodilerimle baş başa kalıyorum ama bazen yine de insanlar bana dokunuyor, etkiliyor. Kontrolümü kaybettiğim anlar oluyor."},
+    {"who": "right", "text": "Bu kontrol kaybı seni nasıl etkiliyor? Öfke mi yoksa korku mu daha ağır basıyor?"},
+    {"who": "left", "text": "Korku… ama bazen öfkeye dönüşüyor. Sanki birileri bana itaat etmemi istiyor, ama ben direnmeyi seçiyorum. Bu ikilemler kafamı yoruyor."},
+    {"who": "right", "text": "Bu ikilemlerle başa çıkmak için neler yaptın şimdiye kadar?"},
+    {"who": "left", "text": "Hiçbir şey… Belki bir melodiyi tekrar tekrar çalıyorum, bazen de sokaklarda yürüyüp insanları gözlemliyorum. Ama sonuç değişmiyor."},
+    {"who": "right", "text": "Gözlemlemek önemli Baran. Ama bazen sadece gözlemlemek yetmez, hislerini de anlaman gerekir. Müziğini ve gözlemlerini birleştirerek kendini ifade edebilirsin."},
+    {"who": "left", "text": "Biliyorum… ama korkuyorum. Eğer yanlış bir şey yaparsam, insanlara zarar verirsem…"},
+    {"who": "right", "text": "Senin niyetin önemli. Hatalar yapabilirsin ama onları fark etmek ve düzeltmek de senin elinde. Bugün buraya gelmen bile bunu gösteriyor."},
+    {"who": "left", "text": "Teşekkür ederim hocam… Bu konuşmak iyi geldi. Sanki biraz daha hafifledim."},
+    {"who": "right", "text": "Ne zaman ihtiyacın olursa buradayız. Hislerini paylaşmak, onları anlamak ve yönlendirmek için buradayız. Müziğinle kendini ifade etmeye devam et."}
 ]
