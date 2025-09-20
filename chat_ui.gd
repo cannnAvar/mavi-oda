@@ -29,11 +29,12 @@ var current_index = 0
 func _ready():
 	# İlk mesajı göster
 	show_next_message()
-	
+
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		show_next_message()
+
 
 func show_next_message():
 	if current_index >= messages.size():
@@ -142,6 +143,7 @@ func show_next_message():
 	# Scroll aşağı
 	call_deferred("scroll_to_bottom")
 
+
 func animate_old_messages_out():
 	# İlk 3 child'ı al (2 mesaj + 1 spacer)
 	var children_to_remove = []
@@ -152,6 +154,7 @@ func animate_old_messages_out():
 	for i in range(children_to_remove.size()):
 		var child = children_to_remove[i]
 		animate_message_out(child, i * 0.1)  # Staggered animasyon
+
 
 func animate_message_out(node: Node, delay: float):
 	# Gecikme ile başla
@@ -179,6 +182,7 @@ func animate_message_out(node: Node, delay: float):
 		messages_container.remove_child(node)
 		node.queue_free()
 
+
 func animate_message_in(message_container: Control):
 	# Tween oluştur
 	var tween = create_tween()
@@ -195,22 +199,26 @@ func animate_message_in(message_container: Control):
 	tween.tween_property(message_container, "scale", Vector2(1.05, 1.05), 0.2).set_delay(0.2)
 	tween.tween_property(message_container, "scale", Vector2(1.0, 1.0), 0.15).set_delay(0.35)
 
+
 func position_right_message(panel: Panel, max_width: int):
 	await get_tree().process_frame
 	var container_width = messages_container.size.x
 	if container_width > max_width:
 		panel.position = Vector2(container_width - max_width - 20, 0)
 
+
 func scroll_to_bottom():
 	await get_tree().process_frame
 	await get_tree().process_frame
 	scroll_container.scroll_vertical = scroll_container.get_v_scroll_bar().max_value
+
 
 # İsteğe bağlı: Tüm mesajları temizle
 func clear_messages():
 	for child in messages_container.get_children():
 		child.queue_free()
 	current_index = 0
+
 
 # İsteğe bağlı: Yeni mesaj ekle
 func add_message(who: String, text: String):
