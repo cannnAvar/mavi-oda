@@ -30,11 +30,7 @@ func _on_window_modes_item_selected(index: int) -> void:
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 
 func _on_return_pressed() -> void:
-<<<<<<< HEAD
 	ChangeScene.change_scene("res://main_menu.tscn")
-=======
-	ChangeScene.change_scene("res://ui_elements/main_menu.tscn")
->>>>>>> d4135ba (please work)
 
 
 func _on_font_types_item_selected(index: int) -> void:
