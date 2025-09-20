@@ -23,20 +23,13 @@ func _on_continue_pressed() -> void:
 	resume()
 
 func _on_main_menu_pressed() -> void:
-<<<<<<< HEAD
 	ChangeScene.change_scene("res://main_menu.tscn")
 	resume()
 
 func _on_options_pressed() -> void:
 	ChangeScene.change_scene("res://options.tscn")
-=======
-	ChangeScene.change_scene("res://ui_elements/main_menu.tscn")
 	resume()
 
-func _on_options_pressed() -> void:
-	ChangeScene.change_scene("res://ui_elements/options.tscn")
->>>>>>> d4135ba (please work)
-	resume()
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
