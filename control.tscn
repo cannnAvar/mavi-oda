@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://davtx1u3hoqxu"]
+[gd_scene load_steps=5 format=3 uid="uid://davtx1u3hoqxu"]
 
 [ext_resource type="Texture2D" uid="uid://be1gx28yen6hk" path="res://icon.svg" id="1_0fbet"]
 [ext_resource type="Script" uid="uid://db1odepcalhdh" path="res://chat_ui.gd" id="2_62e2m"]
 [ext_resource type="Texture2D" uid="uid://bm3c4ppt2d80p" path="res://placeholder.png" id="4_ee4bf"]
+[ext_resource type="PackedScene" uid="uid://t6dl7ipntt51" path="res://pause_menu.tscn" id="4_kbped"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -60,3 +61,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Placeholder" type="Sprite2D" parent="."]
 position = Vector2(336, 280)
 texture = ExtResource("4_ee4bf")
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_kbped")]
+layout_mode = 1
