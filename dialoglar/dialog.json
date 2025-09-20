@@ -1,8 +1,43 @@
 [
-	{"who": "left", "text": "Selam, nasılsın?"},
-	{"who": "right", "text": "İyiyim, sen nasılsın? Efendim adınızı Öğrenebilir miyim"},
-	{"who": "left", "text": "Adım şey emm Cemal Hocam"},
-	{"who": "right", "text": "Cemal bey bana ne için gelmiştiniz bahsedebilir misiniz."},
-	{"who": "left", "text": "Hocam… Ben delirdim mi? İşteyken sarhoş gibi oluyorum, ama içki içmedim. Evde de aynı… Su… suya bir şey mi katıyorlar, yoksa ben mi artık…?"},
-	
+  {
+	"who": "right",
+	"text": "Hocam… Ben delirdim mi? İşteyken sarhoş gibi oluyorum, ama içki içmedim. Evde de aynı… Su… suya bir şey mi katıyorlar, yoksa ben mi artık…?"
+  },
+  {
+	"who": "left",
+	"text": "Sakin ol, Cemal. Bu hissettiklerin ciddi olabilir. Ne yapmamızı istersin?",
+	"choices": [
+	  {"text": "Bunu yetkililere bildir, işini bırak.", "next_index": 2},
+	  {"text": "Boş ver, kafanda büyütüyorsun.", "next_index": 3},
+	  {"text": "Sen haklısın, bir şeyler oluyor. Araştırmaya devam et.", "next_index": 4}
+	]
+  },
+  {
+	"who": "left",
+	"text": "Tamam, yetkililere bildirelim. Ama bu, işini bırakman anlamına gelebilir. Emin misin?",
+	"choices": [
+	  {"text": "Evet, bildir.", "next_index": 5},
+	  {"text": "Hayır, vazgeçtim.", "next_index": 3}
+	]
+  },
+  {
+	"who": "left",
+	"text": "Anladım. Belki de dinlenmeye ihtiyacın vardır. Biraz daha konuşalım mı?",
+	"choices": [
+	  {"text": "Evet, konuşalım.", "next_index": 4},
+	  {"text": "Hayır, iyiyim.", "next_index": 6}
+	]
+  },
+  {
+	"who": "left",
+	"text": "Peki, o zaman şüphelerini not et. Birlikte bu işin peşine düşebiliriz."
+  },
+  {
+	"who": "left",
+	"text": "Yetkililere bildirdik. Ama şimdi işsizsin, Cemal. Aileni nasıl destekleyeceksin?"
+  },
+  {
+	"who": "left",
+	"text": "İyi ki konuştuk. Dinlen ve kendine dikkat et. İhtiyacın olursa buradayım."
+  }
 ]

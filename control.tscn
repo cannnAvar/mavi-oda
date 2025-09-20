@@ -16,7 +16,7 @@ grow_vertical = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.5920139
-anchor_bottom = 1.0
+anchor_bottom = 0.86728394
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
@@ -52,11 +52,12 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.023354564
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.87869364
 grow_horizontal = 0
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Placeholder" type="Sprite2D" parent="."]
-position = Vector2(336, 280)
+position = Vector2(336, 285)
+scale = Vector2(1, 0.982699)
 texture = ExtResource("4_ee4bf")
