@@ -38,9 +38,9 @@ script = ExtResource("2_62e2m")
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.99200004
-anchor_bottom = 0.52900004
+anchor_bottom = 0.882
 offset_right = -0.23202515
-offset_bottom = -0.14703369
+offset_bottom = -0.1260376
 
 [node name="MessagesContainer" type="VBoxContainer" parent="chat_ui/ScrollContainer"]
 layout_mode = 2
