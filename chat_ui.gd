@@ -3,6 +3,9 @@ extends Control
 @onready var messages_container = $ScrollContainer/MessagesContainer
 @onready var scroll_container = $ScrollContainer
 
+@export var next_scene := NodePath("res://levels/level2.tscn")
+
+
 # Sinyaller
 signal choice_selected(dialog_id: int, choice_index: int, choice_text: String)
 
@@ -63,6 +66,7 @@ func _input(event):
 func show_next_message():
 	if current_index >= messages.size():
 		print("Diyalog sonu")
+		ChangeScene.change_scene(next_scene)
 		return
 	
 	# Eski mesajları temizle
