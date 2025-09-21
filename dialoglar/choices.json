@@ -1,1 +1,22 @@
-{"1":{"index":0,"text":"Bunu yetkililere bildir, işini bırak.","timestamp":1758367437.214},"2":{"index":0,"text":"Evet, bildir.","timestamp":1758367439.519},"1":{"index":1.0,"text":"Boş ver, kafanda büyütüyorsun.","timestamp":1758366883.512},"2":{"index":1.0,"text":"Hayır, iyiyim.","timestamp":1758366884.72}}
+{
+	"1": {
+		"index": 0,
+		"text": "Bunu yetkililere bildir, işini bırak.",
+		"timestamp": 1758449307.392
+	},
+	"3": {
+		"index": 1,
+		"text": "Hayır, iyiyim.",
+		"timestamp": 1758449310.565
+	},
+	"1": {
+		"index": 0.0,
+		"text": "Bunu yetkililere bildir, işini bırak.",
+		"timestamp": 1758448899.955
+	},
+	"3": {
+		"index": 0.0,
+		"text": "Evet, konuşalım.",
+		"timestamp": 1758448904.309
+	}
+}

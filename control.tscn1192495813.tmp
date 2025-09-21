@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://davtx1u3hoqxu"]
+
+[ext_resource type="Texture2D" uid="uid://be1gx28yen6hk" path="res://icon.svg" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://db1odepcalhdh" path="res://chat_ui.gd" id="2_62e2m"]
+[ext_resource type="Texture2D" uid="uid://bm3c4ppt2d80p" path="res://placeholder.png" id="4_ee4bf"]
+[ext_resource type="PackedScene" uid="uid://t6dl7ipntt51" path="res://pause_menu.tscn" id="4_kbped"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5920139
+anchor_bottom = 1.0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(295, 243)
+texture = ExtResource("1_0fbet")
+
+[node name="chat_ui" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.79
+anchor_right = 0.79
+offset_left = -226.08002
+offset_top = 3.0
+offset_right = 244.91998
+offset_bottom = 646.0
+script = ExtResource("2_62e2m")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="chat_ui"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.99200004
+anchor_bottom = 0.882
+offset_right = -0.23202515
+offset_bottom = -0.1260376
+
+[node name="MessagesContainer" type="VBoxContainer" parent="chat_ui/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="chat_ui"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.023354564
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Placeholder" type="Sprite2D" parent="."]
+position = Vector2(336, 280)
+texture = ExtResource("4_ee4bf")
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_kbped")]
+layout_mode = 1
