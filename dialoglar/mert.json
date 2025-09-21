@@ -1,0 +1,44 @@
+[
+  {
+    "who": "left",
+    "text": "Mert Bey, hoş geldiniz. Sizin gibi kasabanın önde gelen bir iş adamının buraya gelmesi beni şaşırttı. Sizi buraya getiren şey nedir?"
+  },
+  {
+    "who": "right",
+    "text": "Hocam... Bir vicdan meselesi için gelmedim, bir gerçeği anlamak için geldim. Her şey birbiriyle bağlantılı. Bir adam hapiste, ama bu sadece buzdağının görünen kısmı. Kasabanın dengesi bozuldu, biliyorum... Ama bazı dengeler, koruma altına alınmalıdır. Kendimi, ailemi... Anlıyorsunuz, değil mi?",
+    "choices": [
+      {
+        "text": "Mert, o adamı serbest bırakmalısın. Bir adamın özgürlüğü senin elinde ve senin bunu yapmaya hakkın yok. Vicdanın seni rahatsız ediyor. Doğru olanı yapmalısın.",
+        "next_index": 2
+      },
+      {
+        "text": "Hayatta kalman bir öncelik. Eğer vicdanınla yüzleşmek, hayatını ve ailenin güvenliğini tehlikeye atıyorsa, bu durumu görmezden gelmek daha mantıklı olabilir.",
+        "next_index": 3
+      },
+      {
+        "text": "Elhami’yle iş birliği yapmak en mantıklı yol olabilir. Elhami'nin kasabayı kontrol altında tutmasına yardım etmek, senin ve ailenin güvende olmasını sağlar.",
+        "next_index": 4
+      },
+      {
+        "text": "Belki de bir üçüncü yol vardır. Bu kasabanın kurtuluşu senin elinde olabilir Mert. Sadece içerde bir ajan gibi çalışman gerekiyor. Elhami’yi devireceksek herkese ihtiyacımız var.",
+        "next_index": 5
+      }
+    ]
+  },
+  {
+    "who": "right",
+    "text": "Haklısınız... Bu zinciri kırmak hem beni hem de kasabayı kurtarabilir. Ama Elhami'ye ne olacak? O adam, her yerde... Onu durdurmak, her şeyi riske atmak demek."
+  },
+  {
+    "who": "right",
+    "text": "İşte, duymam gereken şey bu... Demek ki yalnız değilim. Bu yükü tek başıma taşımıyorum."
+  },
+  {
+    "who": "right",
+    "text": "Ah, anlıyorsunuz... Bazen, şeytanla iş birliği yapmak, meleklerle savaşmaktan daha iyidir.."
+  },
+  {
+    "who": "right",
+    "text": "İşte bu... Bu, bana benziyor. Hem kurtarıcı hem de şeytan... Bir plan yapacağım. Herkesi kurtaracağım."
+  }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "who": "right",
+        "text": "Selma Hanım ne oldu bir şey mi oldu, niye bu telaş halindesiniz? "
+    },
+    {
+        "who": "left",
+        "text": "Hocam… Ali bir haftadır kendi kendine konuşuyor. Garip şeyler yapıyor, gece korkusundan uyanıyor… Öğretmeni de aynı şeyleri söyledi. Lütfen bize yardım edin!",
+        "choices": [
+            {
+                "text": "Bu sadece bir çocukluk evresi. Herkesin başına gelir. Sizin dikkatinizi çekmek için yapıyor. Siz ne kadar ona tepki vermezseniz semptomları da o kadar azalır.",
+                "next_index": 2
+            },
+            {
+                "text": "Haklısınız Selma Hanım. Gözlemlediğiniz belirtiler çok önemli. Bu işte bir gariplik var ve bunun nedenini bulmamız lazım.",
+                "next_index": 3
+            },
+            {
+                "text": "Bu semptomlar şizofreni göstergesi olabilir. Ali'ye hızlı bir teşhis koyup geç olmadan tedaviye başlamamız gerekiyor.",
+                "next_index": 4
+            }
+        ]
+    },
+    {
+        "who": "right",
+        "text": "Pekâlâ… Belki de haklısınız. Sadece kendi kendine büyütüyor. Tamam tamam bir şey yok. Oh be. Teşekkürler doktor."
+    },
+    {
+        "who": "right",
+        "text": "İçime doğmuştu… Demek sadece ben değilmişim! Ne yapmamız lazım? Söyleyin, ne gerekiyorsa yapmaya hazırım."
+    },
+    {
+        "who": "right",
+        "text": "Yanlış bir şey mi yaptım? Benim yüzümden mi hasta oldu? Tedavisi var mı hocam?"
+    },
+    {
+        "who": "left",
+        "text": "Sizinle hiçbir alakası yok. Bu hastalık genetik yoldan veya enfeksiyondan gelmiş olabilir. Şu an bizim yapmamız gereken hastalığı ilerlemeden tedavi etmek. Sadece her gün alacağı birkaç antipsikotik ilaçla kolay bir şekilde tedavi edebiliriz. Endişe etmenize hiç gerek yok."
+    },
+    {
+        "who": "right",
+        "text": "Çok teşekkürler doktor. İlaçlarını almasını sağlayacağım."
+    }
+]

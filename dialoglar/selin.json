@@ -1,0 +1,48 @@
+[
+  {
+    "who": "left",
+    "text": "Hoş geldin Selin. Eski dostum. Bir profesyonelden diğerine. Sen de farkında mısın? Öğrenciler, bütün kasaba halkı… Bir şeyler oluyor. Hiç gözüne battı mı?"
+  },
+  {
+    "who": "right",
+    "text": "Çocuklar… değiştiler. Ali özellikle… davranışları çok tuhaf, artık derslere odaklanamıyor ve sorumsuzca hareket ediyor. Bu su meselesiyle mi ilgili bilmiyorum ama… bir şeyler yapmamız lazım.",
+    "choices": [
+      {
+        "text": "Bir öğretmen olarak onları korumak senin yapabileceğin en güvenli şey olur. Elindeki yetkiyle doğrudan müdahale etmeli ve öğrencilerini güvence altına almalısın. Bu Elhami’nin senin yaptıklarını fark etmeden yapabileceğin bir şey. Ama dikkatli ol.",
+        "next_index": 2
+      },
+      {
+        "text": "Ani bir müdahale durumu daha da kötüleştirebilir. En iyi yol, bir süre daha durumu gözlemlemek. Hem de kendini hedef göstermemiş olursun.",
+        "next_index": 3
+      },
+      {
+        "text": "Bu sorunu tek başına çözemezsin. Kasabada bu durumun farkında olan başka insanlar da var. Seni onlarla iletişime geçireceğim. Bir araya gelerek bir strateji oluşturmalısınız.",
+        "next_index": 4
+      },
+      {
+        "text": "Bu durum, bizim yetkimizin ötesinde. Elimizden gelen tek şey bunu yetkili mercilere bildirmek.",
+        "next_index": 5
+      }
+    ]
+  },
+  {
+    "who": "right",
+    "text": "Haklısın. Onların bu durumunu görmezden gelemem. Ne olursa olsun, onları korumak için elimden geleni yapacağım."
+  },
+  {
+    "who": "right",
+    "text": "Pekâlâ… Belki de haklısın. Acele etmemeliyiz. Sadece gözlemleyeceğim."
+  },
+  {
+    "who": "right",
+    "text": "Bu… Bu mantıklı. Herkes kendi derdine düşmüş gibiydi. Birlikte hareket edersek bir şeyler başarabiliriz."
+  },
+  {
+    "who": "right",
+    "text": "Yetkililer… Bu kasabaya ne yapacaklar? Panik çıkmaz mı? Ya işler daha da kötüye giderse?"
+  },
+  {
+    "who": "left",
+    "text": "Selin bu elimizden gelen tek şey. Özür dilerim ama bizi aşan bir durum bu."
+  }
+]

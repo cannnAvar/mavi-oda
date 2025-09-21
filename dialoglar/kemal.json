@@ -1,0 +1,36 @@
+[
+  {
+    "who": "left",
+    "text": "Kemal Bey, hoş geldiniz. Çok büyük hayranınızım. Müziğinizle kasabaya yeni bir soluk getirdiniz. Size nasıl yardımcı olabilirim?"
+  },
+  {
+    "who": "right",
+    "text": "Hocam… İnsanlar garipleşti. Sokakta yürürken tuhaf sesler duyuyorum, herkes birbirini yanlış anlıyor… Bazen kendi melodilerimi çalarken bile kontrolümü kaybediyorum. Yanlış akorlar basmaya başladım. Bu normal mi?",
+    "choices": [
+      {
+        "text": "Bazen sanatçılar böyle hisler yaşar. Bu sadece senin hayal gücün. Bunu ilham gelmiş gibi düşün. Fazla takılma.",
+        "next_index": 2
+      },
+      {
+        "text": "Haklısın, kasabada bir şeyler oluyor. Senin gözlemlerin ve müziğin çok önemli. Bunu kasaba halkına en etkili biçimde sen hissettirebilirsin. Değişimin melodisi ol Kemal.",
+        "next_index": 3
+      },
+      {
+        "text": "Bu garip hislerinin sebebi Cemal olabilir. Eğer o borulara dokunmasaydı, bunlar olmazdı. Onu durdurmak için bir şeyler yapmalısın.",
+        "next_index": 4
+      }
+    ]
+  },
+  {
+    "who": "right",
+    "text": "Yani... Sadece benim hayal gücüm mü? O zaman neden bu kadar gerçek hissediyorum? Ama belki de haklısınız..."
+  },
+  {
+    "who": "right",
+    "text": "İşte! Tam da düşündüğüm gibi… Demek sadece bana öyle gelmiyor. Artık daha dikkatli olacağım. Gördüklerimi ve duyduklarımı müziğimle anlatacağım. Sağ ol doktor… Bana inandığın için. "
+  },
+  {
+    "who": "right",
+    "text": "Demek ki haklıyım! O Cemal… Onun yüzünden herkes deliriyor. Onu durdurmak… Bunu daha önce de düşünmüştüm. Belki de bu tek yol…"
+  }
+]
