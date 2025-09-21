@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtuwro7ccrsiv"]
+
+[ext_resource type="Script" uid="uid://c461cfuvtciu1" path="res://options.gd" id="1_n3p6i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v8ap"]
+bg_color = Color(0.3137255, 0.18039216, 0.07450981, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 4
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n3p6i")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="LeftSide" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 30
+
+[node name="VolumeLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftSide"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Volume"
+
+[node name="Volume" type="HSlider" parent="MarginContainer/HBoxContainer/LeftSide"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="MuteLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftSide"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Mute"
+
+[node name="Mute" type="CheckButton" parent="MarginContainer/HBoxContainer/LeftSide"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Middle" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Return" type="Button" parent="MarginContainer/HBoxContainer/Middle"]
+custom_minimum_size = Vector2(228, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_5v8ap")
+text = "Return"
+
+[node name="RightSide" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 236)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 30
+
+[node name="ResolutionLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Resolution"
+
+[node name="Resolutions" type="OptionButton" parent="MarginContainer/HBoxContainer/RightSide"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+selected = 2
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="WindowModeLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Window Mode"
+
+[node name="WindowModes" type="OptionButton" parent="MarginContainer/HBoxContainer/RightSide"]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+
+[connection signal="value_changed" from="MarginContainer/HBoxContainer/LeftSide/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="MarginContainer/HBoxContainer/LeftSide/Mute" to="." method="_on_mute_toggled"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Middle/Return" to="." method="_on_return_pressed"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/RightSide/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/RightSide/WindowModes" to="." method="_on_window_modes_item_selected"]
