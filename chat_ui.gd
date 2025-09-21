@@ -223,10 +223,10 @@ func create_message_bubble(text: String, who: String) -> Control:
 		style.bg_color = Color(0.9, 0.9, 1.0)
 		style.corner_radius_bottom_left = 4
 		panel.position.x = 20
-	else:  # right
+	elif who == "right":  # right
 		style.bg_color = Color(1.0, 0.9, 0.9)
-		style.corner_radius_bottom_right = 4
-		panel.position.x = get_viewport().size.x - bubble_width - 70
+		style.corner_radius_bottom_right = 6
+		panel.position.x = 100
 	
 	panel.add_theme_stylebox_override("panel", style)
 	
@@ -235,7 +235,7 @@ func create_message_bubble(text: String, who: String) -> Control:
 	label.text = text
 	label.fit_content = true
 	label.scroll_active = false
-	label.custom_minimum_size = Vector2(bubble_width - 20, 30)
+	label.custom_minimum_size = Vector2(bubble_width - 50, 30)
 	
 	# Margin
 	var margin = MarginContainer.new()
@@ -297,7 +297,7 @@ func save_choices_to_file():
 		file.close()
 
 func load_choices_from_file():
-	var file = FileAccess.open("res://choices.json", FileAccess.READ)
+	var file = FileAccess.open("res://dialoglar.json", FileAccess.READ)
 	if file:
 		var json = JSON.new()
 		if json.parse(file.get_as_text()) == OK:
