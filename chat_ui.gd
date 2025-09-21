@@ -291,7 +291,7 @@ func save_player_choice(dialog_id: int, choice_index: int, choice_text: String):
 	save_choices_to_file()
 
 func save_choices_to_file():
-	var file = FileAccess.open("res://dialoglar/.json", FileAccess.WRITE)
+	var file = FileAccess.open("user://save_game.dat", FileAccess.WRITE)
 	if file:
 		file.store_string(JSON.stringify(player_choices, "\t"))
 		file.close()
