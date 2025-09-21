@@ -3,23 +3,14 @@ extends Control
 @onready var messages_container = $ScrollContainer/MessagesContainer
 @onready var scroll_container = $ScrollContainer
 
-<<<<<<< HEAD
-=======
 @export var next_scene := NodePath("res://levels/level2.tscn")
 
 
->>>>>>> parent of 8c9ee63 (orginize: next paths selected)
 # Sinyaller
 signal choice_selected(dialog_id: int, choice_index: int, choice_text: String)
 
 # Sistem değişkenleri
 @export var dialog_file_path: String = "res://dialoglar/dialog.json"
-<<<<<<< HEAD
-@export var next_scene : String = "res://levels/level2.tscn"
-
-
-=======
->>>>>>> parent of 8c9ee63 (orginize: next paths selected)
 var messages: Array = []
 var current_index: int = 0
 var waiting_for_choice: bool = false
