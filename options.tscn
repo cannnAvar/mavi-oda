@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtuwro7ccrsiv"]
 
-[ext_resource type="Script" uid="uid://c461cfuvtciu1" path="res://ui_elements/options.gd" id="1_n3p6i"]
+[ext_resource type="Script" uid="uid://c461cfuvtciu1" path="res://options.gd" id="1_n3p6i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v8ap"]
 bg_color = Color(0.3137255, 0.18039216, 0.07450981, 1)
@@ -63,37 +63,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="ResolutionLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftSide"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Resolution"
-
-[node name="Resolutions" type="OptionButton" parent="MarginContainer/HBoxContainer/LeftSide"]
-custom_minimum_size = Vector2(0, 50)
-layout_mode = 2
-selected = 2
-item_count = 3
-popup/item_0/text = "1920x1080"
-popup/item_0/id = 0
-popup/item_1/text = "1600x900"
-popup/item_1/id = 1
-popup/item_2/text = "1280x720"
-popup/item_2/id = 2
-
-[node name="WindowModeLabel" type="Label" parent="MarginContainer/HBoxContainer/LeftSide"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Window Mode"
-
-[node name="WindowModes" type="OptionButton" parent="MarginContainer/HBoxContainer/LeftSide"]
-layout_mode = 2
-selected = 0
-item_count = 2
-popup/item_0/text = "Windowed"
-popup/item_0/id = 0
-popup/item_1/text = "Fullscreen"
-popup/item_1/id = 1
-
 [node name="Middle" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -109,44 +78,45 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_5v8ap")
 text = "Return"
 
 [node name="RightSide" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 236)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 30
 
-[node name="FontTypeLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
+[node name="ResolutionLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Font Type"
+text = "Resolution"
 
-[node name="FontTypes" type="OptionButton" parent="MarginContainer/HBoxContainer/RightSide"]
+[node name="Resolutions" type="OptionButton" parent="MarginContainer/HBoxContainer/RightSide"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-selected = 0
+selected = 2
 item_count = 3
-popup/item_0/text = "Arial"
+popup/item_0/text = "1920x1080"
 popup/item_0/id = 0
-popup/item_1/text = "Times New Roman"
+popup/item_1/text = "1600x900"
 popup/item_1/id = 1
-popup/item_2/text = "Pixelated"
+popup/item_2/text = "1280x720"
 popup/item_2/id = 2
 
-[node name="FontSizeLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
+[node name="WindowModeLabel" type="Label" parent="MarginContainer/HBoxContainer/RightSide"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Font Size"
+text = "Window Mode"
 
-[node name="FontSizeSlider" type="HSlider" parent="MarginContainer/HBoxContainer/RightSide"]
-custom_minimum_size = Vector2(200, 0)
+[node name="WindowModes" type="OptionButton" parent="MarginContainer/HBoxContainer/RightSide"]
 layout_mode = 2
-step = 25.0
-tick_count = 5
-ticks_on_borders = true
+selected = 0
+item_count = 2
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
 
 [connection signal="value_changed" from="MarginContainer/HBoxContainer/LeftSide/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="toggled" from="MarginContainer/HBoxContainer/LeftSide/Mute" to="." method="_on_mute_toggled"]
-[connection signal="item_selected" from="MarginContainer/HBoxContainer/LeftSide/Resolutions" to="." method="_on_resolutions_item_selected"]
-[connection signal="item_selected" from="MarginContainer/HBoxContainer/LeftSide/WindowModes" to="." method="_on_window_modes_item_selected"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Middle/Return" to="." method="_on_return_pressed"]
-[connection signal="item_selected" from="MarginContainer/HBoxContainer/RightSide/FontTypes" to="." method="_on_font_types_item_selected"]
-[connection signal="value_changed" from="MarginContainer/HBoxContainer/RightSide/FontSizeSlider" to="." method="_on_font_size_slider_value_changed"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/RightSide/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/RightSide/WindowModes" to="." method="_on_window_modes_item_selected"]
